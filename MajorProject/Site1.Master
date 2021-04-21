@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MajorProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 50px;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1ABC9C !important;
+        }
+
+        #h31 {
+            height: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        #h32 {
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+
+        #h33 {
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            height: 100px;
+            margin-top:100px;
+            margin-bottom: 0px;
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+
+        .label {
+            color: black;
+        }
+
+        #register_container {
+            margin: auto;
+            padding-top: 5%;
+            padding-bottom: 6%;
+            height: 100%;
+            
+            
+        }
+        #login_container {
+            margin: auto;
+            padding-top: 5%;
+            padding-bottom: 6%;
+            height: 100%;
+            
+        }
+
+        .row {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .reg_btn {
+            padding: 5px 10px;
+            border-radius: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+<!------------------------------------------------- Navigation Bar ---------------------------------------------------------------->
+                    <td>
+                        <nav class="navbar navbar-default">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Easy Lift</a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="Home.aspx">Home</a></li>
+                                        <li><a href="#">Search Ride</a></li>
+                                        <li><a href="#">Offer Ride</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </td>
+                </tr>
+<!------------------------------------------------- Navigation Bar  Ends ---------------------------------------------------------->
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+<!---------------------------------------------------- Footer ------------------------------------------------------------------>
+                        <footer class="container-fluid text-center footer">
+                            <p id="h31">
+                                Website Developed By <a href="#">Ashish Kumar</a>
+                                
+
+                            </p>
+
+
+
+                        </footer>
+                    </td>
+<!----------------------------------------------------- Footer Ends ----------------------------------------------------->
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
