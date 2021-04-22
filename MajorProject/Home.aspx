@@ -7,14 +7,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <asp:Button ID="reg_show" runat="server" Text="Register" OnClick="reg_show_Click" />
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <asp:Button ID="reg_show" runat="server" Text="Register" OnClick="reg_show_Click" Width="150px" />
             </div>
-            <div class="col-md-6">
-                <asp:Button ID="login_show" runat="server" Text="Login" OnClick="login_show_Click" />
+            <div class="col-md-2">
+                <asp:Button ID="login_show" runat="server" Text="Login" OnClick="login_show_Click" Width="150px" />
             </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
 

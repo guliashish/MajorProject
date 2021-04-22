@@ -36,17 +36,7 @@
         }
         .auto-style16 {
             height: 20px;
-            width: 304px;
-        }
-        .auto-style17 {
-            width: 390px
-        }
-        .auto-style19 {
-            width: 276px;
-        }
-        .auto-style20 {
-            height: 20px;
-            width: 276px;
+            width: 217px;
         }
         .auto-style22 {
             width: 239px;
@@ -55,16 +45,53 @@
             height: 20px;
             width: 239px;
         }
-        .auto-style26 {
+        .auto-style29 {
             height: 20px;
-            width: 390px;
+            width: 542px;
         }
-        .auto-style27 {
+        .auto-style30 {
+            width: 413px
+        }
+        .auto-style31 {
+            width: 217px;
+        }
+        .auto-style32 {
             height: 20px;
-            width: 256px;
+            width: 413px;
         }
-        .auto-style28 {
-            width: 256px
+        .auto-style33 {
+            height: 20px;
+            width: 332px;
+        }
+        .auto-style34 {
+            width: 332px
+        }
+        .auto-style35 {
+            height: 20px;
+            width: 99px;
+        }
+        .auto-style36 {
+            width: 99px;
+        }
+        .auto-style37 {
+            width: 332px;
+            height: 25px;
+        }
+        .auto-style38 {
+            width: 99px;
+            height: 25px;
+        }
+        .auto-style39 {
+            width: 239px;
+            height: 25px;
+        }
+        .auto-style40 {
+            width: 413px;
+            height: 25px;
+        }
+        .auto-style41 {
+            width: 217px;
+            height: 25px;
         }
     </style>
 </asp:Content>
@@ -97,14 +124,16 @@
             <td class="auto-style7">&nbsp;</td>
             <td class="auto-style8">
 
-    <asp:Button ID="Button1" runat="server" Text="Profile" OnClick="Button1_Click" Width="100px" CausesValidation="False" />
+    <asp:Button ID="Button1" runat="server" Text="Profile" OnClick="Button1_Click" Width="150px" CausesValidation="False" Height="30px" />
 
             </td>
             <td class="auto-style9">
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Car Details" Width="100px" CausesValidation="False" />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Update Profile" Width="150px" CausesValidation="False" Height="30px" />
             </td>
             <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style11">&nbsp;</td>
+            <td class="auto-style11">
+                <asp:Button ID="Button4" runat="server" CausesValidation="False" OnClick="Button4_Click" Text="Logout" Width="200px" />
+            </td>
         </tr>
     </table>
 
@@ -255,57 +284,93 @@
 
         <table class="nav-justified">
             <tr>
-                <td class="auto-style27"></td>
-                <td class="auto-style23" colspan="2">
+                <td class="auto-style33"></td>
+                <td class="auto-style33">
+                    <asp:Label ID="Label35" runat="server" Font-Size="24px" Text="User Details"></asp:Label>
+                </td>
+                <td class="auto-style33">&nbsp;</td>
+                <td class="auto-style35">&nbsp;</td>
+                <td class="auto-style29" colspan="2">
                     <asp:Label ID="Label21" runat="server" Font-Bold="True" Font-Size="24px" Text="Enter Your Vehicle Details"></asp:Label>
                 </td>
                 <td class="auto-style16"></td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style17">&nbsp;</td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style30">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style27"></td>
+                <td class="auto-style33"></td>
+                <td class="auto-style33">
+                    <asp:Label ID="Label36" runat="server" Text="Name"></asp:Label>
+                </td>
+                <td class="auto-style33">
+                    <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style35">&nbsp;</td>
                 <td class="auto-style23">
                     <asp:Label ID="Label15" runat="server" Text="Number"></asp:Label>
                 </td>
-                <td class="auto-style26">
+                <td class="auto-style32">
                     <asp:TextBox ID="car_number" runat="server" Width="200px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="car_number" ErrorMessage="Enter Car Number" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style20"></td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
-                <td class="auto-style22">
+                <td class="auto-style37"></td>
+                <td class="auto-style37">
+                    <asp:Label ID="Label37" runat="server" Text="Age"></asp:Label>
+                </td>
+                <td class="auto-style37">
+                    <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style38"></td>
+                <td class="auto-style39">
                     <asp:Label ID="Label16" runat="server" Text="Brand"></asp:Label>
                 </td>
-                <td class="auto-style17">
+                <td class="auto-style40">
                     <asp:TextBox ID="car_brand" runat="server" Width="200px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="car_brand" ErrorMessage="Enter Car Brand" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style41"></td>
             </tr>
             <tr>
-                <td class="auto-style27"></td>
+                <td class="auto-style33"></td>
+                <td class="auto-style33">
+                    <asp:Label ID="Label38" runat="server" Text="Gender"></asp:Label>
+                </td>
+                <td class="auto-style33">
+                    <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style35">&nbsp;</td>
                 <td class="auto-style23">
                     <asp:Label ID="Label17" runat="server" Text="Model"></asp:Label>
                 </td>
-                <td class="auto-style26">
+                <td class="auto-style32">
                     <asp:TextBox ID="car_model" runat="server" Width="200px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="car_model" ErrorMessage="Enter Car Model" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style20"></td>
+                <td class="auto-style16"></td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">
+                    <asp:Label ID="Label39" runat="server" Text="Email"></asp:Label>
+                </td>
+                <td class="auto-style34">
+                    <asp:TextBox ID="TextBox4" runat="server" ReadOnly="True" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">
                     <asp:Label ID="Label18" runat="server" Text="Vehicle Kind"></asp:Label>
                 </td>
-                <td class="auto-style17">
+                <td class="auto-style30">
                     <asp:DropDownList ID="vehicle_kind" runat="server" Width="200px">
                         <asp:ListItem>Sedan</asp:ListItem>
                         <asp:ListItem>Coupe</asp:ListItem>
@@ -316,45 +381,66 @@
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="vehicle_kind" ErrorMessage="Select Vehicle Kind" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">
+                    <asp:Label ID="Label40" runat="server" Text="Contact"></asp:Label>
+                </td>
+                <td class="auto-style34">
+                    <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">
                     <asp:Label ID="Label19" runat="server" Text="Colour"></asp:Label>
                 </td>
-                <td class="auto-style17">
+                <td class="auto-style30">
                     <asp:TextBox ID="car_colour" runat="server" Width="200px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="car_colour" ErrorMessage="Enter Car Colour" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">
+                    <asp:Label ID="Label41" runat="server" Text="Address"></asp:Label>
+                </td>
+                <td class="auto-style34">
+                    <asp:TextBox ID="TextBox6" runat="server" Width="200px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">
                     <asp:Label ID="Label20" runat="server" Text="Model Year"></asp:Label>
                 </td>
-                <td class="auto-style17">
+                <td class="auto-style30">
                     <asp:TextBox ID="car_model_year" runat="server" Width="200px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="car_model_year" ErrorMessage="Enter Model Year" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style17">
+                <td class="auto-style30">
                     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True" ShowSummary="False" />
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style28">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style34">&nbsp;</td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style22">&nbsp;</td>
-                <td class="auto-style17">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Save" Width="100px" />
+                <td class="auto-style30">
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Save" Width="100px" CausesValidation="False" />
                     <asp:Label ID="save_message" runat="server"></asp:Label>
                 </td>
-                <td class="auto-style19">&nbsp;</td>
+                <td class="auto-style31">&nbsp;</td>
             </tr>
         </table>
 

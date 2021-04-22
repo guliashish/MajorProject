@@ -15,12 +15,10 @@ namespace MajorProject
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
         }
 
         protected void reg_btn_Click(object sender, EventArgs e)
         {
-
             InsertData();
         }
 
@@ -47,16 +45,22 @@ namespace MajorProject
                 {
                     selectedgender = "Female";
                 }
-
                 _sqlcmd.Parameters.AddWithValue("@user_gender", selectedgender);
                 _sqlcmd.Parameters.AddWithValue("@user_email", email.Text);
-                _sqlcmd.Parameters.AddWithValue("@user_phone",contact.Text);
+                _sqlcmd.Parameters.AddWithValue("@user_phone", contact.Text);
                 _sqlcmd.Parameters.AddWithValue("@user_address", address.Text);
                 _sqlcmd.Parameters.AddWithValue("@user_password", passwd.Text);
-                _sqlcmd.ExecuteNonQuery();
-                
+                int return_value = Convert.ToInt32(_sqlcmd.ExecuteScalar());
+                if(return_value == -1)
+                {
+                    Label9.Text = "User Already Registered";
+                }
+                else
+                {
+                    Label9.Text = "Registered Successfully";
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Response.Write(ex);
             }
