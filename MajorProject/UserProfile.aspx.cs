@@ -20,7 +20,7 @@ namespace MajorProject
             {
                 welcome.Text = "Welcome" + "    " + Session["FirstName"];
             }
-            UserData();
+            
 
             UserDetails_Container.Style.Add("display", "none");
             CarDetails_Container.Style.Add("display", "none");
@@ -82,6 +82,7 @@ namespace MajorProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            UserData();
             UserDetails_Container.Style.Add("display", "block");
             CarDetails_Container.Style.Add("display", "none");
         }

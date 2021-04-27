@@ -20,19 +20,13 @@
             height: 26px;
         }
         .auto-style7 {
-            width: 285px
+            width: 185px
         }
         .auto-style8 {
             width: 139px;
         }
         .auto-style9 {
             width: 206px;
-        }
-        .auto-style10 {
-            width: 182px;
-        }
-        .auto-style11 {
-            width: 254px
         }
         .auto-style16 {
             height: 20px;
@@ -93,13 +87,25 @@
             width: 217px;
             height: 25px;
         }
+        .auto-style42 {
+            width: 101%
+        }
+        .auto-style43 {
+            width: 277px
+        }
+        .auto-style44 {
+            width: 205px;
+        }
+        .auto-style45 {
+            width: 247px;
+        }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
   
-    <table class="nav-justified">
+    <table class="auto-style42">
         <tr>
             <td class="auto-style7">
 
@@ -107,32 +113,46 @@
             <td class="auto-style8">
 
                 &nbsp;</td>
-            <td class="auto-style9">
-            <asp:Label ID="welcome" runat="server" Font-Bold="True" Font-Overline="False" Width="100%"></asp:Label>
+            <td class="auto-style9" colspan="3">
+            <asp:Label ID="welcome" runat="server" Font-Bold="True" Font-Overline="False" Width="85%" Font-Size="22px"></asp:Label>
             </td>
-            <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style11">&nbsp;</td>
+            <td class="auto-style9">
+                &nbsp;</td>
+            <td class="auto-style45">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style7">&nbsp;</td>
             <td class="auto-style8">&nbsp;</td>
             <td class="auto-style9">&nbsp;</td>
-            <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style11">&nbsp;</td>
+            <td class="auto-style43">&nbsp;</td>
+            <td class="auto-style43">&nbsp;</td>
+            <td class="auto-style45">&nbsp;</td>
+            <td class="auto-style44">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style7">&nbsp;</td>
+            <td class="auto-style7">
+
+                &nbsp;</td>
             <td class="auto-style8">
 
     <asp:Button ID="Button1" runat="server" Text="Profile" OnClick="Button1_Click" Width="150px" CausesValidation="False" Height="30px" />
 
             </td>
-            <td class="auto-style9">
+            <td>
+
                 <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Update Profile" Width="150px" CausesValidation="False" Height="30px" />
+
             </td>
-            <td class="auto-style10">&nbsp;</td>
-            <td class="auto-style11">
-                <asp:Button ID="Button4" runat="server" CausesValidation="False" OnClick="Button4_Click" Text="Logout" Width="200px" />
+            <td class="auto-style43">
+                <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="18px" Font-Underline="True" ForeColor="Black" NavigateUrl="~/Offer_ride.aspx">Offer Ride</asp:HyperLink>
+            </td>
+            <td class="auto-style43">
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Size="18px" Font-Underline="True" ForeColor="Black" NavigateUrl="~/Search_ride.aspx">Search Ride</asp:HyperLink>
+            </td>
+            <td class="auto-style45">
+                &nbsp;</td>
+            <td class="auto-style44">
+                <asp:Button ID="Button4" runat="server" CausesValidation="False" OnClick="Button4_Click" Text="Logout" Width="150px" />
             </td>
         </tr>
     </table>
@@ -179,7 +199,7 @@
                 <td class="auto-style2">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5"></td>
                 <td class="auto-style6">
                     <asp:Label ID="Label2" runat="server" Text="Name"></asp:Label>
                 </td>
